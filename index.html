@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金額入力コンポーネント</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div>金額入力コンポーネント</div>
+        <currency-input class="text-right" v-model="amountOfMoney"></currency-input>
+        <br>
+        親で保持している値 : {{amountOfMoney}}<br>
+        型 : {{typeof amountOfMoney}}
+    </div>
+</body>
+
+<foot>
+    <script src="./component.js"></script>
+    <script src="./index.js"></script>
+</foot>
+
+<style>
+    .text-right{
+        text-align: right;
+    }
+</style>
+
+</html>
